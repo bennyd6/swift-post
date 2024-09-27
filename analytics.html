@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Analytics</title>
+    <link rel="stylesheet" href="Public/Styles/analyticsStyles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Swift Post Logo">
+        </div>
+        <h1>SWIFT POST</h1>
+        <h2>User Analytics Dashboard</h2>
+
+        <!-- Analytics Sections -->
+        <div class="analytics-section">
+            <div class="analytics-card">
+                <h3>Order Related Data</h3>
+                <canvas id="ordersChart"></canvas>
+            </div>
+
+            <div class="analytics-card">
+                <h3>History</h3>
+                <canvas id="historyChart"></canvas>
+            </div>
+
+            <div class="analytics-card">
+                <h3>Complaints Raised</h3>
+                <canvas id="complaintsRaisedChart"></canvas>
+            </div>
+
+            <div class="analytics-card">
+                <h3>Complaints Resolved</h3>
+                <canvas id="complaintsResolvedChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sample Graph Scripts -->
+    <script>
+        // Orders Chart
+        const ordersCtx = document.getElementById('ordersChart').getContext('2d');
+        const ordersChart = new Chart(ordersCtx, {
+            type: 'bar',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+                datasets: [{
+                    label: 'Orders',
+                    data: [20, 40, 30, 50, 70, 60],
+                    backgroundColor: '#005753',
+                }]
+            },
+            options: {
+                responsive: true
+            }
+        });
+
+        // History Chart
+        const historyCtx = document.getElementById('historyChart').getContext('2d');
+        const historyChart = new Chart(historyCtx, {
+            type: 'line',
+            data: {
+                labels: ['2020', '2021', '2022', '2023'],
+                datasets: [{
+                    label: 'History of Orders',
+                    data: [100, 200, 150, 300],
+                    borderColor: '#005753',
+                    fill: false,
+                }]
+            },
+            options: {
+                responsive: true
+            }
+        });
+
+        // Complaints Raised Chart
+        const complaintsRaisedCtx = document.getElementById('complaintsRaisedChart').getContext('2d');
+        const complaintsRaisedChart = new Chart(complaintsRaisedCtx, {
+            type: 'pie',
+            data: {
+                labels: ['Late Delivery', 'Damaged Product', 'Wrong Item'],
+                datasets: [{
+                    label: 'Complaints Raised',
+                    data: [10, 5, 8],
+                    backgroundColor: ['#005753', '#47b5a3', '#9ed8c5']
+                }]
+            },
+            options: {
+                responsive: true
+            }
+        });
+
+        // Complaints Resolved Chart
+        const complaintsResolvedCtx = document.getElementById('complaintsResolvedChart').getContext('2d');
+        const complaintsResolvedChart = new Chart(complaintsResolvedCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Resolved', 'Pending'],
+                datasets: [{
+                    label: 'Complaints Resolved',
+                    data: [70, 30],
+                    backgroundColor: ['#005753', '#9ed8c5']
+                }]
+            },
+            options: {
+                responsive: true
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F3F5F9; /* Light greyish background */
+}
+
+/* Container */
+.container {
+    background-color: #FFFFFF;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+.logo img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #005753; /* Teal color for the logo text */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 22px;
+    color: #333333; /* Dark text for page heading */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Communication Section */
+.communication-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.communication-card {
+    background-color: #F9F9F9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.communication-card h3 {
+    color: #005753;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.communication-card p {
+    font-size: 16px;
+    color: #333333;
+}
+
+/* Background pattern */
+body:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #147686; /* Teal color background pattern */
+    clip-path: circle(35% at 10% 20%);
+    z-index: -1;
+}
+
+body:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 60%;
+    right: 0;
+    bottom: 0;
+    background: #147686; /* Teal color background pattern on the right */
+    clip-path: circle(30% at 90% 50%);
+    z-index: -1;
+}

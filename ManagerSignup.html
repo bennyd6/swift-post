@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Public/Styles/Login-Signup.css">
+    <link rel="stylesheet" href="Public/Styles/ManagerSignup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Register Manager</title>
+</head>
+<body>
+    <div class="main">
+        <img src="Public/assets/logo.png" alt="">
+        <div class="card">
+            <h1>Register Manager</h1>
+            <div class="form">
+                <input type="text" name="fullname" id="" class="email-password" placeholder="Enter your Fullname">
+                <input type="text" name="employee id" id="" class="email-password" placeholder="Employee ID">
+                <input type="text" name="email" id="" class="email-password" placeholder="Email">
+                <input type="text" name="phnno." id="" class="email-password" placeholder="Mobile Number">
+                <!-- <input type="text" name="branch" id="" class="email-password" placeholder="Branch"> -->
+                <select name="branch" class="drop-down">
+                    <option value="volvo">Hyderabad</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                  </select>
+                <input type="password" name="password" class="email-password" id="password-holder" placeholder="Password">
+                <input type="password" name="Confirm password" class="email-password" id="password-holder" placeholder="Confirm Password">
+                <div class="form-in-1">
+                    <div class="show-password">
+                        <input type="checkbox" id="show-password" onclick="showPassword()">
+                        <label for="show-password">Show Password</label>
+                    </div>
+                    <!-- <a href="">Forgot Password?</a> -->
+                </div>
+                <button type="submit">Register</button>
+                <!-- <p>Have an account? <a href="UserLogin.html">Login</a></p> -->
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function showPassword(){
+        var passwordField=document.getElementById("password-holder")
+        if(passwordField.type==="password"){
+            passwordField.type="text";
+        }
+        else{
+            passwordField.type="password";
+        }
+    }
+</script>
+</html>

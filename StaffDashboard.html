@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Dashboard</title>
+    <link rel="stylesheet" href="Public/Styles/StaffDashboard.css">
+    <link rel="stylesheet" href="Public/Styles/Sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <img src="Public/assets/logo-white2.png" alt="">
+        <a href="#" class="menu-item">
+            <i class="fas fa-home"></i>
+            <span class="menu-text">Home</span>
+        </a>
+        <a href="#" class="menu-item">
+            <i class="fas fa-bell"></i>
+            <span class="menu-text">Notifications</span>
+        </a>
+        <a href="#" class="menu-item">
+            <i class="fas fa-cog"></i>
+            <span class="menu-text">Settings</span>
+        </a>
+        <a href="" class="menu-item">
+            <i class="fas fa-user"></i>
+            <span class="menu-text">Profile</span>
+        </a>
+        <a href="StaffLogin.html" class="menu-item logout">
+            <i class="fas fa-sign-out-alt"></i>
+            <span class="menu-text">Logout</span>
+        </a>
+
+    </div>
+
+    <div class="main">
+        <div class="content">
+            <h1>Welcome, David!</h1>
+            <div class="content-in">
+                <div class="card">
+                    <img src="Public/assets/checklist.png" alt="">
+                    <h2> <a href="#ord">Orders and Deliveries</a></h2>
+                    <p>Manage and monitor all assigned deliveries. Update the status of orders and ensure they meet Citizens' Charter timelines.</p>
+                </div>
+                <div class="card">
+                    <img src="Public/assets/complain.png" alt="">
+                    <h2> <a href="FilingComplaint.html">File a Complaint</a></h2>
+                    <p>Log complaints on behalf of users based on phone calls or emails. Capture and track issues reported outside the online portal.</p>
+                </div>
+                <div class="card">
+                    <img src="Public/assets/test.png" alt="">
+                    <h2> <a href="RaisedComplaints.html">Raised Complaints</a></h2>
+                    <p>View all complaints, including those raised via phone, email, or directly through the user portal, in a tabular format. Track the resolution progress.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ord-del" id="ord">
+        <h1>Orders and Deliveries</h1>
+        <table id="ordersTable">
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Customer Name</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Status</th>
+                <th>Expected Delivery</th>
+                <th>Contact</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>OD12345</td>
+                <td>John Doe</td>
+                <td>Smartphone</td>
+                <td>1</td>
+                <td>Out for Delivery</td>
+                <td>2024-09-25</td>
+                <td>+1 555 123 4567</td>
+              </tr>
+              <tr>
+                <td>OD12346</td>
+                <td>Jane Smith</td>
+                <td>Laptop</td>
+                <td>1</td>
+                <td>Delivered</td>
+                <td>2024-09-20</td>
+                <td>+1 555 987 6543</td>
+              </tr>
+              <tr>
+                <td>OD12346</td>
+                <td>Jane Smith</td>
+                <td>Laptop</td>
+                <td>1</td>
+                <td>Delivered</td>
+                <td>2024-09-20</td>
+                <td>+1 555 987 6543</td>
+              </tr>
+              <tr>
+                <td>OD12346</td>
+                <td>Jane Smith</td>
+                <td>Laptop</td>
+                <td>1</td>
+                <td>Delivered</td>
+                <td>2024-09-20</td>
+                <td>+1 555 987 6543</td>
+              </tr>
+              <tr>
+                <td>OD12345</td>
+                <td>John Doe</td>
+                <td>Smartphone</td>
+                <td>1</td>
+                <td>Out for Delivery</td>
+                <td>2024-09-25</td>
+                <td>+1 555 123 4567</td>
+              </tr>
+              <tr>
+                <td>OD12346</td>
+                <td>Jane Smith</td>
+                <td>Laptop</td>
+                <td>1</td>
+                <td>Delivered</td>
+                <td>2024-09-20</td>
+                <td>+1 555 987 6543</td>
+              </tr>
+              <tr>
+                <td>OD12346</td>
+                <td>Jane Smith</td>
+                <td>Laptop</td>
+                <td>1</td>
+                <td>Delivered</td>
+                <td>2024-09-20</td>
+                <td>+1 555 987 6543</td>
+              </tr>
+              <tr>
+                <td>OD12346</td>
+                <td>Jane Smith</td>
+                <td>Laptop</td>
+                <td>1</td>
+                <td>Delivered</td>
+                <td>2024-09-20</td>
+                <td>+1 555 987 6543</td>
+              </tr>
+              <tr>
+                <td>OD12345</td>
+                <td>John Doe</td>
+                <td>Smartphone</td>
+                <td>1</td>
+                <td>Out for Delivery</td>
+                <td>2024-09-25</td>
+                <td>+1 555 123 4567</td>
+              </tr>
+              <tr>
+                <td>OD12346</td>
+                <td>Jane Smith</td>
+                <td>Laptop</td>
+                <td>1</td>
+                <td>Delivered</td>
+                <td>2024-09-20</td>
+                <td>+1 555 987 6543</td>
+              </tr>
+              <tr>
+                <td>OD12346</td>
+                <td>Jane Smith</td>
+                <td>Laptop</td>
+                <td>1</td>
+                <td>Delivered</td>
+                <td>2024-09-20</td>
+                <td>+1 555 987 6543</td>
+              </tr>
+              <tr>
+                <td>OD12346</td>
+                <td>Jane Smith</td>
+                <td>Laptop</td>
+                <td>1</td>
+                <td>Delivered</td>
+                <td>2024-09-20</td>
+                <td>+1 555 987 6543</td>
+              </tr>
+              <tr>
+                <td>OD12345</td>
+                <td>John Doe</td>
+                <td>Smartphone</td>
+                <td>1</td>
+                <td>Out for Delivery</td>
+                <td>2024-09-25</td>
+                <td>+1 555 123 4567</td>
+              </tr>
+              <tr>
+                <td>OD12346</td>
+                <td>Jane Smith</td>
+                <td>Laptop</td>
+                <td>1</td>
+                <td>Delivered</td>
+                <td>2024-09-20</td>
+                <td>+1 555 987 6543</td>
+              </tr>
+              <tr>
+                <td>OD12346</td>
+                <td>Jane Smith</td>
+                <td>Laptop</td>
+                <td>1</td>
+                <td>Delivered</td>
+                <td>2024-09-20</td>
+                <td>+1 555 987 6543</td>
+              </tr>
+              <tr>
+                <td>OD12346</td>
+                <td>Jane Smith</td>
+                <td>Laptop</td>
+                <td>1</td>
+                <td>Delivered</td>
+                <td>2024-09-20</td>
+                <td>+1 555 987 6543</td>
+              </tr>
+              <tr>
+                <td>OD12345</td>
+                <td>John Doe</td>
+                <td>Smartphone</td>
+                <td>1</td>
+                <td>Out for Delivery</td>
+                <td>2024-09-25</td>
+                <td>+1 555 123 4567</td>
+              </tr>
+              <tr>
+                <td>OD12346</td>
+                <td>Jane Smith</td>
+                <td>Laptop</td>
+                <td>1</td>
+                <td>Delivered</td>
+                <td>2024-09-20</td>
+                <td>+1 555 987 6543</td>
+              </tr>
+              <tr>
+                <td>OD12346</td>
+                <td>Jane Smith</td>
+                <td>Laptop</td>
+                <td>1</td>
+                <td>Delivered</td>
+                <td>2024-09-20</td>
+                <td>+1 555 987 6543</td>
+              </tr>
+              <tr>
+                <td>OD12346</td>
+                <td>Jane Smith</td>
+                <td>Laptop</td>
+                <td>1</td>
+                <td>Delivered</td>
+                <td>2024-09-20</td>
+                <td>+1 555 987 6543</td>
+              </tr>
+              <tr>
+                <td>OD12345</td>
+                <td>John Doe</td>
+                <td>Smartphone</td>
+                <td>1</td>
+                <td>Out for Delivery</td>
+                <td>2024-09-25</td>
+                <td>+1 555 123 4567</td>
+              </tr>
+              <tr>
+                <td>OD12346</td>
+                <td>Jane Smith</td>
+                <td>Laptop</td>
+                <td>1</td>
+                <td>Delivered</td>
+                <td>2024-09-20</td>
+                <td>+1 555 987 6543</td>
+              </tr>
+              <tr>
+                <td>OD12346</td>
+                <td>Jane Smith</td>
+                <td>Laptop</td>
+                <td>1</td>
+                <td>Delivered</td>
+                <td>2024-09-20</td>
+                <td>+1 555 987 6543</td>
+              </tr>
+              <tr>
+                <td>OD12346</td>
+                <td>Jane Smith</td>
+                <td>Laptop</td>
+                <td>1</td>
+                <td>Delivered</td>
+                <td>2024-09-20</td>
+                <td>+1 555 987 6543</td>
+              </tr>
+              
+            </tbody>
+          </table>          
+    </div>
+</body>
+</html>

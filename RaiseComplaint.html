@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raise Complaint</title>
+    <link rel="stylesheet" href="Public/Styles/Sidebar.css">
+    <link rel="stylesheet" href="Public/Styles/RaiseComplaint.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <img src="Public/assets/logo-white2.png" alt="">
+        <a href="UserDashboard.html" class="menu-item">
+            <i class="fas fa-home"></i>
+            <span class="menu-text">Home</span>
+        </a>
+        <a href="#" class="menu-item">
+            <i class="fas fa-bell"></i>
+            <span class="menu-text">Notifications</span>
+        </a>
+        <a href="#" class="menu-item">
+            <i class="fas fa-cog"></i>
+            <span class="menu-text">Settings</span>
+        </a>
+        <a href="" class="menu-item">
+            <i class="fas fa-user"></i>
+            <span class="menu-text">Profile</span>
+        </a>
+        <a href="StaffLogin.html" class="menu-item logout">
+            <i class="fas fa-sign-out-alt"></i>
+            <span class="menu-text">Logout</span>
+        </a>
+    </div>
+    <div class="main">
+        <div class="content">
+            <div class="bread-crumb">
+                <h4><a href="UserDashboard.html">Dashboard</a><b> >> </b>Raise a Complaint</h4>
+            </div>
+            <div class="complaint-form" id="file-complaint">
+                <h2>Raise a Complaint</h2>
+                <form action="/submit-complaint" method="POST">
+                    <!-- Auto-generated Complaint ID (visible only in backend) -->
+                    
+                    <!-- Staff Input for the User's Name -->
+                <label for="username">User Name</label>
+                <input type="text" id="username" name="username" placeholder="Enter the your name" required>
+                
+                <!-- Staff Input for User Contact -->
+                <label for="userContact">User Contact</label>
+                <input type="text" id="userContact" name="userContact" placeholder="Enter your contact no." required>
+                
+                <!-- Dropdown to select the type of complaint (via call or mail) -->
+                <!-- <label for="complaintType">Complaint Type</label>
+                <select id="complaintType" name="complaintType" required>
+                    <option value="" disabled selected>Select Complaint Type</option>
+                    <option value="call">Call</option>
+                    <option value="mail">Mail</option>
+                </select>111111111111111 -->
+                
+                <!-- Date & Time of Complaint -->
+                <label for="complaintDate">Date and Time</label>
+                <input type="datetime-local" id="complaintDate" name="complaintDate" required>
+                
+                <!-- Textarea for staff to note down the complaint description -->
+                <label for="complaintDesc">Complaint Description</label>
+                <textarea id="complaintDesc" name="complaintDesc" rows="4" placeholder="Enter the complaint details" required></textarea>
+                
+                <!-- Staff member logging the complaint -->
+                <!-- <label for="filedBy">Filed By</label>
+                <input type="text" id="filedBy" name="filedBy" placeholder="Enter your name" required> -->
+                
+                <!-- Dropdown to assign the complaint to another staff member -->
+                <!-- <label for="assignedStaff">Assign to Staff</label>
+                <select id="assignedStaff" name="assignedStaff" required>
+                    <option value="" disabled selected>Select Assigned Staff</option>
+                    <option value="staff_1">Staff Member 1</option>
+                    <option value="staff_2">Staff Member 2</option>
+                    <option value="staff_3">Staff Member 3</option>
+                </select> -->
+    
+                <!-- Dropdown to select complaint status -->
+                <!-- <label for="complaintStatus">Complaint Status</label>
+                <select id="complaintStatus" name="complaintStatus" required>
+                    <option value="" disabled selected>Select Status</option>
+                    <option value="pending">Pending</option>
+                    <option value="in_progress">In Progress</option>
+                    <option value="resolved">Resolved</option>
+                </select> -->
+                
+                <!-- Submit button -->
+                <button type="submit">Submit Complaint</button>
+            </form>
+        </div>
+        </div>
+    </div>
+    
+</body>
+</html>

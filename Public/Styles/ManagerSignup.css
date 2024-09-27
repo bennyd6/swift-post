@@ -1,0 +1,24 @@
+.card{
+    width: 450px;
+    height: 580px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.drop-down{
+    width: 312px;
+    height: 43px;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    padding-left: 10px;
+    /* padding-right: -10px; */
+    /* padding-right: 5px; */
+}
+
+.main img{
+    width: 200px;
+    padding-bottom: 20px;
+    /* margin-top: -190px; */
+}

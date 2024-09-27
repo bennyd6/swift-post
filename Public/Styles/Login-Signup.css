@@ -1,0 +1,112 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../assets/bg.svg');
+    background-size: cover;
+
+}
+
+.card{
+    width: 450px;
+    height: 400px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.main img{
+    width: 300px;
+    padding-bottom: 20px;
+    /* margin-top: -190px; */
+}
+
+
+.card h1{
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.email-password{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    padding-left: 10px;
+}
+
+.form button {
+    width: 300px;
+    height: 40px;
+    margin-top: 15px;
+    background-color: #147686;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+.form button:hover {
+    background: linear-gradient(45deg, #23a6d5, #23d5ab);
+    transform: scale(1.05);
+}
+
+
+.form-in-1{
+    width: 68%;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+a{
+    color: #147686;
+}
+
+.show-password {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 10px; */
+}
+
+.show-password input{
+    cursor: pointer;
+}
+
+.show-password label {
+    margin-left: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+p{
+    font-size: 14px;
+}
+
+button a{
+    text-decoration: none;
+    color: aliceblue;
+}

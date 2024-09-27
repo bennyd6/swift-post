@@ -1,0 +1,113 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F3F5F9; /* Light greyish background */
+}
+
+
+
+/* Container */
+.container {
+    background-color: #FFFFFF;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+.logo img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    color:  #147686; /* Teal color for the logo text */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 22px;
+    color: #333333; /* Dark text for Staff Monitoring heading */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Staff List */
+.staff-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.staff-member {
+    background-color: #F9F9F9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.staff-member h3 {
+    color:  #147686;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.staff-stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.staff-stats div {
+    text-align: center;
+}
+
+.staff-stats h4 {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.staff-stats p {
+    font-size: 18px;
+    color:  #147686; /* Teal color for the numbers */
+}
+
+/* Background pattern */
+body:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:  #147686; /* Teal color background pattern */
+    clip-path: circle(35% at 10% 20%);
+    z-index: -1;
+}
+
+body:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 60%;
+    right: 0;
+    bottom: 0;
+    background: #147686; /* Teal color background pattern on the right */
+    clip-path: circle(30% at 90% 50%);
+    z-index: -1;
+}
